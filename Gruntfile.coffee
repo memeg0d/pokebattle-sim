@@ -171,10 +171,10 @@ module.exports = (grunt) ->
     aws: grunt.file.readJSON(awsConfigPath)
     s3:
       options:
-        accessKeyId: "<%= aws.accessKeyId %>"
-        secretAccessKey: "<%= aws.secretAccessKey %>"
-        bucket: "pokebattle"
-        region: 'us-west-2'
+        key: '<%= aws.key %>',
+        secret: '<%= aws.secret %>',
+        bucket: 'pokebattle',
+        region: 'us-west-2',
       build:
         cwd: "public/"
         expand: true
