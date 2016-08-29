@@ -17,7 +17,7 @@ css/vendor.css
 assetPaths = assetPaths.map (assetPath) -> assetPath.split('/').join(path.sep)
 
 module.exports = (grunt) ->
-  awsConfigPath = 'aws_config.json'
+  awsConfigPath = '/home/ec2-user/pokebattle-sim/aws_config.json'
   if !grunt.file.exists(awsConfigPath)
     grunt.file.copy("#{awsConfigPath}.example", awsConfigPath)
 
