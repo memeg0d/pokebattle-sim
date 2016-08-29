@@ -5,7 +5,7 @@ set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 
 set :application, "pokebattle-sim"
-set :repository,  "git@github.com:sarenji/pokebattle-sim.git"
+set :repository,  "git@github.com:memeg0d/pokebattle-sim.git"
 
 set :scm, :git
 set :user, "combee"
