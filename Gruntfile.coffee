@@ -173,7 +173,7 @@ module.exports = (grunt) ->
       options:
         accessKeyId: "<%= aws.accessKeyId %>"
         secretAccessKey: "<%= aws.secretAccessKey %>"
-        bucket: "pokebattle"
+        bucket: "pokebattle.s3.amazonaws.com"
         region: 'us-west-2'
       build:
         cwd: "public/"
