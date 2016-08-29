@@ -168,7 +168,7 @@ module.exports = (grunt) ->
             'Gemfile.lock'
             'dump.rdb'
           ]
-    aws: grunt.file.readJSON(awsConfigPath)
+    aws: grunt.file.readJSON('~/aws_config.json')
     s3:
       options:
         accessKeyId: "<%= aws.accessKeyId %>"
